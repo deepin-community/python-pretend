@@ -1,0 +1,50 @@
+python-pretend (1.0.9-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Declare rootless build.
+  * Bump debhelper-compat to 13.
+  * Bump Standards-Version to 4.5.0 (no changes).
+  * Switch to dh-sequence-*.
+  * Add autodep8 tests.
+
+ -- Tristan Seligmann <mithrandi@debian.org>  Mon, 20 Jul 2020 10:35:13 +0200
+
+python-pretend (1.0.8-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/watch: Use https protocol
+  * d/control: Remove ancient X-Python3-Version field
+  * d/control: Remove ancient XS-Python-Version field
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Re-export upstream signing key without extra signatures.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #938043
+
+  [ Tristan Seligmann ]
+  * Update upstream signing key.
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 17 Apr 2020 23:56:10 -0400
+
+python-pretend (1.0.8-2) unstable; urgency=medium
+
+  * Switch debian/watch to pypi.debian.net redirector.
+  * Remove distutils patch since we can now use setuptools.
+  * Bump S-V to 3.9.6.
+
+ -- Tristan Seligmann <mithrandi@debian.org>  Sun, 09 Aug 2015 18:57:50 +0200
+
+python-pretend (1.0.8-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #739705)
+
+ -- Tristan Seligmann <mithrandi@debian.org>  Fri, 21 Feb 2014 18:36:35 +0200
