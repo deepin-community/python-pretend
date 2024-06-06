@@ -1,42 +1,29 @@
 Source: python-pretend
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Uploaders: Tristan Seligmann <mithrandi@debian.org>
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Boyuan Yang <byang@debian.org>,
 Section: python
 Priority: optional
 Build-Depends:
  debhelper-compat (= 13),
- dh-sequence-pypy,
  dh-sequence-python3,
- pypy,
- pypy-setuptools,
  python3-all,
  python3-setuptools,
-Standards-Version: 4.5.0
+Standards-Version: 4.7.0
 Testsuite: autopkgtest-pkg-python
 Rules-Requires-Root: no
 Homepage: https://github.com/alex/pretend
-Vcs-Git: https://salsa.debian.org/python-team/modules/python-pretend.git
-Vcs-Browser: https://salsa.debian.org/python-team/modules/python-pretend
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-pretend.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-pretend
 
 Package: python3-pretend
 Architecture: all
-Depends: ${misc:Depends}, ${python3:Depends}
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
 Description: Python library for stubbing (Python 3)
  Pretend is a library to make stubbing with Python easier.
  .
  Stubbing is a technique for writing tests. You may hear the term mixed up with
  mocks, fakes, or doubles. Basically a stub is an object that returns pre-canned
  responses, rather than doing any computation.
- .
-
-Package: pypy-pretend
-Architecture: all
-Depends: ${misc:Depends}, ${pypy:Depends}
-Description: Python library for stubbing (PyPy)
- Pretend is a library to make stubbing with Python easier.
- .
- Stubbing is a technique for writing tests. You may hear the term mixed up with
- mocks, fakes, or doubles. Basically a stub is an object that returns pre-canned
- responses, rather than doing any computation.
- .
- This package contains the PyPy version of pretend.

@@ -1,3 +1,31 @@
+python-pretend (1.0.9-3) unstable; urgency=medium
+
+  * Remove retired person from package uploaders list. (Closes: #1041179)
+  * Bump Standards-Version to 4.7.0.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 11 Apr 2024 18:48:19 -0400
+
+python-pretend (1.0.9-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Stop building pypy-pretend (Closes: #1021407)
+
+ -- Paul Gevers <elbrus@debian.org>  Fri, 07 Oct 2022 21:27:09 +0200
+
+python-pretend (1.0.9-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 03 Jun 2022 23:22:26 -0400
+
 python-pretend (1.0.9-1) unstable; urgency=medium
 
   * New upstream release.
